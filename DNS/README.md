@@ -1,5 +1,5 @@
 # BIND9 DNS
-For DNS services on my Ubuntu server I am using BIND9. I will include the directions below to configure it, configuration files are in this directory as well.
+For DNS services on my Ubuntu server I am using BIND9. I will include the directions below to configure it, configuration files are in this directory as well. The **/etc/bind/** directory contains these configs on my server.
 
 # BIND9 Installation
 To install BIND9 with a Ubuntu server, run the command **sudo apt-get install bind9** 
