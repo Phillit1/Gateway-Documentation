@@ -1,7 +1,7 @@
 # Firewall 
 For firewall services on my Ubuntu server I am using UFW. I will include the directions below to configure it, configuration files are in this directory as well.
 
-### Directories for the included configs:
+### Locations of the included configs:
 
 -**/etc/ufw/before.rules**
 
