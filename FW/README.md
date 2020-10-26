@@ -18,6 +18,9 @@ Masquerading is what will allow our clients on the internal 10.0.0.0/24 network 
 - Open **/etc/default/ufw** with a text editor.
 - Change **DEFAULT_FORWARD_POLICY** from _DROP_ to _ACCEPT_
 - Save & exit the file and next open **/etc/ufw/sysctl.conf"** with a text editor.
-- Uncomment line 11 (#net/ipv4/ip_forward=1) and 12 (#net/ipv6/conf/default/forwarding=1) in this file by deleting the #.
+- Uncomment line 11 (**#net/ipv4/ip_forward=1**) and 12 (**#net/ipv6/conf/default/forwarding=1**) in this file by deleting the #.
 - Save & exit the file and next open **/etc/ufw/before.rules** with a text editor.
 - Somewhere in the document add the following text into the before.rules file.
+![nattable](https://user-images.githubusercontent.com/73307402/97224908-9c5dad80-17b0-11eb-9f4e-113e9c95d467.PNG)
+- If you used a different private network subnet than 10.0.0.0/24 just change it to the network you are using.
+- After all is done UFW must be disabled and enabled to put changes into effect. Use **"sudo ufw disable"** & **"sudo ufw enable"**.
