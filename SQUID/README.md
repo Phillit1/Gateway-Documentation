@@ -1,5 +1,5 @@
 # Proxy Server
-For proxy services on my Ubuntu server I am using Squid. I will include the directions below to configure it, configuration files are in this directory as well.
+For proxy services on my Ubuntu server I am using Squid. I will include the directions below to configure it, configuration files are in this directory as well. The squid configuration files are stored in the **/etc/squid/** directory.
 
 # Squid Installation
 To install Squid with a Ubuntu server, run the command **sudo apt-get install squid**.
