@@ -6,7 +6,9 @@ To install BIND9 with a Ubuntu server, run the command **sudo apt-get install bi
 
 # BIND9 Configuration
 ## Caching Server
-To enable this BIND9 DNS Caching Server open **/etc/bind/named.conf.options** with a text editor. Uncomment the forwarders portion of the document and replace the 0.0.0.0 with your preferred DNS. (I used 8.8.8.8 & 8.8.4.4). After editing this information you need to reset BIND9 with (**sudo service bind9 restart**) for changes to go into effect.
+To enable this BIND9 DNS Caching Server:
+1. open **/etc/bind/named.conf.options** with a text editor. 
+2. Uncomment the forwarders portion of the document and replace the 0.0.0.0 with your preferred DNS. (I used 8.8.8.8 & 8.8.4.4). 3. After editing this information you need to reset BIND9 with (**sudo service bind9 restart**) for changes to go into effect.
 
 ![CachingConf](https://user-images.githubusercontent.com/73307402/97124794-45a09700-1710-11eb-8e76-8fc444de2bb2.PNG)
 
