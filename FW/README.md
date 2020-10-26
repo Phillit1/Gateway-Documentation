@@ -12,5 +12,12 @@ UFW is included in Ubuntu by default and no install is necessary, it just just d
 - **10.0.0.1** is the IP of my test client, after connecting my test VM to the private **10.0.0.0/24** network it got the address from DHCP services.
 
 # UFW Masquerading
-Masquerading is what will allow our clients on the internal 10.0.0.0/24 network to communicate with devices on the LAN/WAN.
-- 
+
+Masquerading is what will allow our clients on the internal 10.0.0.0/24 network to communicate with devices on the LAN/WAN. We will need to edit two seperate files to achieve this.
+
+- Open **/etc/default/ufw** with a text editor.
+- Change **DEFAULT_FORWARD_POLICY** from _DROP_ to _ACCEPT_
+- Save & exit the file and next open **/etc/ufw/sysctl.conf"** with a text editor.
+- Uncomment line 11 (#net/ipv4/ip_forward=1) and 12 (#net/ipv6/conf/default/forwarding=1) in this file by deleting the #.
+- Save & exit the file and next open **/etc/ufw/before.rules** with a text editor.
+- Somewhere in the document add the following text into the before.rules file.
