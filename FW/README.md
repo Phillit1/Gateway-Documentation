@@ -1,6 +1,11 @@
 # Firewall 
 For firewall services on my Ubuntu server I am using UFW. I will include the directions below to configure it, configuration files are in this directory as well.
 
+Directories for the included configs:
+-**/etc/ufw/before.rules**
+-**/etc/ufw/sysctl.conf**
+-**/etc/default/ufw**
+
 UFW is included in Ubuntu by default and no install is necessary, it just just disabled by default. We will enable UFW with the command **"sudo ufw enable"** and enter UFW rules to allow/deny specific traffic.
 
 # UFW Rules
