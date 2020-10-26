@@ -16,6 +16,8 @@ UFW is included in Ubuntu by default and no install is necessary, it just just d
 - Enable SSH access by allowing port 22. **"sudo ufw allow 22"**
 - Enable DNS access by allowing port 53. **"sudo ufw allow 53"**
 - Enable HTTP access by allowing port 80/TCP. **"sudo ufw allow 80/TCP"**
+
+## Deny
 - For testing purposes I also denied SSH access from a specific client. **"sudo ufw deny proto tcp from 10.0.0.1 to any port 22"**
 - **10.0.0.1** is the IP of my test client, after connecting my test VM to the private **10.0.0.0/24** network it got the address from DHCP services.
 
