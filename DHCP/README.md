@@ -5,7 +5,6 @@ For DHCP services on my Ubuntu server we will install isc-dhcp-server. I will in
 To install DHCP with a Ubuntu server, run the command **sudo apt-get install isc-dhcp-server** 
 
 # DHCP Configuration
-## dhcpd.conf
 - Open **/etc/dhcp/dhcpd.conf** with a text editor.
 - Delete the first two options and below max-lease-time 7200; insert the following information.
 
