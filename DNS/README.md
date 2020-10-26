@@ -15,4 +15,8 @@ Next we will configure BIND9 as the primary master for the domain **domain.com**
 
 We must add a DNS zone to BIND9 and turn BIND9 into a primary master server. Edit **/etc/bind9/named.conf.local** and add the zone with the following configuration;
 
+![BIND9 named conf local](https://user-images.githubusercontent.com/73307402/97133075-8bb52500-1727-11eb-9619-06ffe3e98d82.PNG)
 
+You can replace "new.com" with your chosen TLD and replace the "file target" with a new chosen DB name like db.example.com.
+
+Next we will use an existing zone file as a template, and name it after the new chosen DB name above db.example.com.
