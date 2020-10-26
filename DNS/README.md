@@ -28,10 +28,10 @@ You can replace "new.com" with your chosen TLD and replace the "file target" wit
 Next we will use an existing zone file as a template, and name it after the new chosen DB name above db.example.com. There is a file in the bind directory we can use for this template, use the command **sudo cp /etc/bind/db.local /etc/bind/db.new.com**.
 
 We will have to edit this new zone file: 
-1. Use **sudo vi /etc/bind/db.new.com**; change "localhost." to the FQDN of your server leaving the "." at the end, I used **ns.new.com**.
-2. Also change the IP of 127.0.0.1 to the IP address of your BIND9 DNS server. 
-3. Replace "root.localhosts." with a valid email address with "." instead of "@", but also leave the "." at the end.
-4. We will edit the current A record at the bottom of the zone file, change the 127.0.0.1 to the IP address of your BIND9 DNS server.
-5. Also add a new wildcard record below the A record you just changed, will be an identical record except the **@** is replaced with __*__
-6. After changes are made to the file, you must increment the Serial by at least +1. Ensure you do this, then save.
-7. Again after making changes to BIND9 restart the service with (**sudo service bind9 restart**) for changes to go into effect.
+- Use **sudo vi /etc/bind/db.new.com**; change "localhost." to the FQDN of your server leaving the "." at the end, I used **ns.new.com**.
+- Also change the IP of 127.0.0.1 to the IP address of your BIND9 DNS server. 
+- Replace "root.localhosts." with a valid email address with "." instead of "@", but also leave the "." at the end.
+- We will edit the current A record at the bottom of the zone file, change the 127.0.0.1 to the IP address of your BIND9 DNS server.
+- Also add a new wildcard record below the A record you just changed, will be an identical record except the **@** is replaced with __*__
+- After changes are made to the file, you must increment the Serial by at least +1. Ensure you do this, then save.
+- Again after making changes to BIND9 restart the service with (**sudo service bind9 restart**) for changes to go into effect.
