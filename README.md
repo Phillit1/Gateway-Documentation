@@ -8,7 +8,7 @@ The Ubuntu server has been configured to run the following services:
 * SQUID - Squid has been used to configure a transparent proxy server on the ubuntu server and block traffic to the site www.neverssl.com on the 10.0.0.0/24 network
 
 # Installation of Ubuntu 20.04.1
-**NOTE: To install the virtual machines you will need a hypervisor**; I used VMWorstation for the installation of mine but you may use whatever you want.
+**NOTE: To install the virtual machines you will need a hypervisor**; I used VMWorkstation for the installation of mine but you may use whatever you want.
 
 You can grab the installation file for Ubuntu here: https://ubuntu.com/download/server. (_Make sure to grab 20.04.1_)
 
