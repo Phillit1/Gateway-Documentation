@@ -23,7 +23,7 @@ UFW is included in Ubuntu by default and no install is necessary, it just just d
 
 # UFW Masquerading
 
-Masquerading is what will allow our clients on the internal 10.0.0.0/24 network to communicate with devices on the LAN/WAN. We will need to edit two seperate files to achieve this.
+Masquerading is what will allow our clients on the internal 10.0.0.0/24 network to communicate with devices on the LAN/WAN. We will need to edit three seperate files to achieve this.
 
 - Open **/etc/default/ufw** with a text editor.
 - Change **DEFAULT_FORWARD_POLICY** from _DROP_ to _ACCEPT_
