@@ -19,7 +19,7 @@ To enable this BIND9 DNS Caching Server:
 
 Next we will configure BIND9 as the primary master for the domain **new.com**
 
-We must add a DNS zone to BIND9 and turn BIND9 into a primary master server. Edit **/etc/bind9/named.conf.local** and add the zone with the following configuration;
+We must add a DNS zone to BIND9 and turn BIND9 into a primary master server. Edit **/etc/bind/named.conf.local** and add the zone with the following configuration;
 
 ![BIND9 named conf local](https://user-images.githubusercontent.com/73307402/97170462-7f05f080-176a-11eb-85bb-f6f765d72c02.PNG)
 
